@@ -51,31 +51,7 @@ Open `sentiment_analysis.ipynb` in VS Code (or Jupyter), restart the kernel, and
 - The Claude step makes about 330 API calls (300 test + 30 hard cases). With Haiku 5.5 this costs a few cents.
 - Claude's answers are saved to `results/claude_predictions.csv`. On later runs the notebook loads this file
   instead of calling the API again. Delete it to get fresh predictions.
-
-## Project layout
-
-```
-milestone_4/
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── all-data.csv                  # raw dataset
-├── sentiment_analysis.ipynb      # all steps: EDA, models, comparison, error analysis
-├── data/                         # created by the notebook
-│   ├── train.csv
-│   ├── test_subset_300.csv
-│   └── hard_cases.csv
-└── results/                      # created by the notebook
-    ├── metrics.csv               # the results table
-    ├── claude_predictions.csv    # Claude answers + token/cost log
-    ├── chart_macro_f1.png
-    ├── chart_hard_cases.png
-    ├── chart_speed.png
-    ├── confusion_matrices.png
-    ├── eda.png
-    ├── test_with_predictions.csv
-    └── hard_cases_with_predictions.csv
-```
+  
 
 ## Notebook steps
 
